@@ -1,0 +1,180 @@
+body {
+font-family: "Lato", sans-serif;
+padding: 0;
+margin: 0;
+}
+#topnav{
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: solid rgb(10,104,155);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#topnav .profile-container{
+    float: right !important;
+}
+#topnav .profile-container a{
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+#topnav .profile-container .dropdown-menu{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #8497b2;
+    border-radius: 10px;
+}
+#topnav .profile-container .dropdown-menu a{
+    font-size: 15px !important;
+    font-weight: 600;
+}
+#topnav .profile-container .dropdown-menu a:hover{
+    background-color: inherit;
+    color:white;
+    transition: 0.5s;
+}
+#topnav .profile-container .profile-image-container #dropdownbutton{
+    padding-left: 5px;
+    font-size: 15px;
+    color:white;
+}
+.sidepanel  {
+width: 0;
+position: fixed;
+z-index: 1;
+height: 100%;
+top: 0;
+left: 0;
+overflow-x: hidden;
+overflow-y: hidden;
+transition: 0.5s;
+padding-top:10px;
+background: rgb(10,104,155);
+background: linear-gradient(180deg, rgba(10,104,155,1) 83%, rgba(128,128,128,1) 98%);
+}
+.sidepanel h5{
+    color:white;
+    font-size: 20px;
+}
+.sidepanel #iDrive_name{
+    font-size: 30px;
+    color:white;
+    font-weight: 600;
+}
+.sidepanel a {
+padding: 8px 8px 8px 0;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidepanel a:hover {
+color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+
+.openbtn {
+font-size: 20px;
+cursor: pointer;
+background-color: #111;
+color: white;
+padding: 10px 15px;
+border: none;
+}
+
+.openbtn:hover {
+background-color:#444;
+}
+.sidepanel .logo-container img{
+    width: 80px;
+    height: 80px;
+}
+.sidepanel #account-name{
+    height: 80px;
+    background-color: #07486b;
+    padding:auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.sidepanel #account-name h5{
+    vertical-align: middle;
+}
+.sidepanel #buttons-container{
+    padding: 0 !important;
+}
+.sidepanel #buttons-container a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidepanel #buttons-container span{
+    color:white;
+}
+.sidepanel #buttons-container ul{
+    list-style: none;
+    padding-left: 0;
+}
+.sidepanel #buttons-container li{
+    background-color: inherit;
+    list-style: none;
+    border: none;
+    padding-left: 0;
+}
+.sidepanel #buttons-container button{
+    width: 110%;
+    height: 50px;
+    background-color: inherit;
+    align-items: center;
+    border:none;
+    outline:none;
+}
+.sidepanel #buttons-container button:hover{
+    background: #0a589b;
+    background: linear-gradient(180deg, #0c6dc1 13%, #0a589b 100%);
+}
+.sidepanel #buttons-container button:hover span{
+    color:black;
+    transition: 0.7s;
+}
+.sidepanel #buttons-container img{
+    height: 50px;
+    width: auto;
+}
+.sidepanel .dropdown span{
+    font-size: 20px;
+}
+.sidepanel .dropdown-content {
+    display: none;
+    width: 110%;
+    padding-left: 15px;
+    background-color: pink;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+.sidepanel .dropdown-content a{
+    color:black;
+    text-align: center;
+    
+}
+.sidepanel .dropdown-content a:hover{
+    color:white;
+}
+.sidepanel .dropdown-content.show{
+    display: block;
+    transition: 0.5s;
+    opacity: 1;
+}
+.sidepanel i{
+    font-size: 30px;
+}

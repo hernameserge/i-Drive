@@ -1,0 +1,231 @@
+@import url('https://fonts.cdnfonts.com/css/jaldi');
+body{
+    background-color: rgb(52, 48, 48) !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#navbar img{
+    width:auto;
+    height:100px;
+}
+.navbar {
+    overflow: hidden;
+    height:120px;
+    background-color: rgba(217, 217, 217, 0.5);
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display:none !important;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+}
+  
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    transition:0.7s;
+}
+.navbar .icon {
+    display: none;
+}
+.background-image-container img{
+    height: 560px;
+    border-radius: 100% 0 0 0;
+    border: 10px solid rgb(10, 88, 155);
+    border-bottom: 10px solid rgb(10, 88, 155);
+}
+
+main h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(10, 88, 155);
+    font-size: 7vw;
+}
+main{
+    position: relative;
+    height: 500px;
+}
+
+main h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+}
+section{
+    position:relative;
+    left:5% !important;
+    width: 450px;
+}
+section span{
+    color: white;
+    font-size: 15px;
+}
+main button{
+    height: 70px;
+    width: 200px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+main button:hover{
+    transition:0.5s ease-in;
+}
+main #signup-btn{
+    color: black;
+    background-color: rgb(10, 88, 155);
+}
+main #signup-btn:hover{
+    background-color: white;
+    color: rgb(10, 88, 155);
+}
+main #login-btn{
+    color: white;
+    background: linear-gradient(to bottom, #505050 80%, rgba(255,255, 255, 0.9) 100%);
+}
+main #login-btn:hover{
+    background: rgb(10, 88, 155);
+    color: black;
+}
+#myModal img, #login img{
+    height: 85px;
+    width: auto;
+}
+.modal-dialog{
+    border:10px solid rgb(10, 88, 155);
+}
+#txt-container{
+    text-align: justify;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#testimonial-cotanier{
+    height: auto;
+}
+#testimonial-container img{
+    width: auto;
+    height: 150px;
+}
+#testimonial-container span{
+    font-size: 25px;
+    color: white;
+}
+#about h3, #courses h3{
+    color:rgb(10, 88, 155);
+    font-size: 50px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#mission-photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 70% 30% 70% 30% / 39% 30% 70% 61% ;
+}
+#mission-photo-container img{
+    height: 350px;
+    width: auto;
+}
+#vision-photo-container img{
+    height: 350px;
+    width: auto;
+}
+#ex-img-container{
+    width: 500px !important;
+    height: 500px !important;
+    background: url('../photos/missionbg.jpg');
+    background-size:900px;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+}
+#about{
+    color: white;
+}
+#about h5{
+    font-size: 30px;
+    font-size: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#about p{
+    font-size: 20px;
+}
+#visionbg{
+    width: 600px;
+    height: 600px;
+    background: url('../photos/visionbg-copy.jpg');
+    background-size: 600px;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    border-radius: 50px !important;
+}
+#theoretical{
+    background-color: rgb(10, 88, 155);
+    width: 400px;
+    height: 700px;
+    padding: 50px;
+    text-align: center;
+    color:white;
+    border-radius: 50px;
+
+}
+
+#theoretical p{
+    font-size: 20px;
+}
+#theoretical-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#theoretical-container img{
+    height: 250px;
+}
+#practical{
+    background-color: white;
+    width: 400px;
+    height: 700px;
+    padding: 50px;
+    text-align: center;
+    color:black;
+    border-radius: 50px;
+
+}
+#practical p{
+    font-size: 20px;
+}
+#practical-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#practical-container img{
+    height: 250px;
+}
+#how-to-register .modal-content{
+    background-color: rgb(10, 88, 155) !important;
+    border-radius: 50px;
+    color: white;
+}
+.container{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+}
+.btn-container{
+    bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-container button{
+    border-radius: 10px;
+}

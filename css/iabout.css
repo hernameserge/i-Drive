@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container .lorem{
+    width: auto;
+}
+.text-container{
+    border-radius: 20px 20px 0 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: rgb(10,104,155);
+    margin-bottom: 20px;    
+}
+.text-container .body{
+    font-size: 18px;
+    color: white;
+}
+.text-container h4{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.container .header{
+    border-radius: 20px 20px 0 0;
+    background-color: #177695;
+    width: 100%;
+    height: auto;
+}

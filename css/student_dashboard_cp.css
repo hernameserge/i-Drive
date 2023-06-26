@@ -1,0 +1,286 @@
+@media only screen and (max-width: 767px){
+    body{
+        overflow-x: hidden;
+        background-image: url('../photos/cover.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: sticky;
+        overflow-x: none;
+        margin: 0;
+    }
+    #top-tools{
+        border-bottom: rgb(10,104,155) solid 5px;
+        background-color: #5b5758;
+        width: auto;
+        position:absolute;
+    }
+    /* Side panel styles */
+    .side-panel{
+        position: fixed;
+        top: 0;
+        left: -120px;
+        width: 120px;
+        height: 100%;
+        background: rgb(10,104,155);
+        background: linear-gradient(180deg, rgba(10,104,155,1) 83%, rgba(128,128,128,1) 98%);
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    .side-panel.open{
+        left: 0;
+    }
+      
+    .side-panel ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+      
+    .side-panel .list-group-item {
+        color: #fff;
+        background-color: inherit;
+        border: none;
+    }
+      
+      /* Close button styles */
+    .close-button {
+        position: relative;
+        top: 10px;
+        float: right;
+        margin-right: 10px;
+        color: #fff;
+        font-size: 5px !important;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+      
+      .close-button:hover {
+        color: #ccc;
+      }
+      
+      /* Content styles */
+    .container {
+        margin-top: 50px;
+    }
+    #hamburgerBtn{
+        position: static !important;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        z-index: 90;
+    }
+    .side-panel .logo-container{
+        padding-left: 5px;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+    .side-panel .logo-container h2{
+        font-size: 30px;
+    }
+    .side-panel .logo-container img{
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .side-panel .dashboard-container{
+        padding-right: 5px;
+    }
+    .side-panel .account-name-container{
+        padding-left: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        margin-top: 10px;
+        width: 100%;
+        height: 100px;
+        padding-top: 25px;
+        background-color: #07486b;
+    }
+    .side-panel .dashboard-container .buttons-container .photos-container img{
+        height: 15px;
+        width: auto;
+    }
+    .side-panel .dashboard-container .buttons-container button{
+        background: inherit;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 60px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size:12px;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+
+    .side-panel .dashboard-container .buttons-container button:hover{
+        background: #0a589b;
+        background: linear-gradient(180deg, #0c6dc1 13%, #0a589b 100%);
+        color: black;
+        transition: 0.5s;
+    }
+    .side-panel .buttons-container span{
+        font-size: smaller;
+    }
+    .side-panel .buttons-container li{
+        padding-right: 0;
+    }
+    .profile-container{
+        margin-top: 10px;
+        float: right;
+        background: inherit;
+        width: 100px !important;
+        height: 100px;
+        margin-right: 5px;
+    }
+    .profile-container .profile-image-container span{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .profile-container .profile-image-container .dropdown img{
+        height:30x; 
+        width:30px;
+        border:none; 
+        border-radius:50%;
+    }
+    .profile-container .profile-image-container #dropdown-menu{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #8497b2;
+        border-radius: 10px;
+    }
+    .profile-container .profile-image-container .dropdown .dropdown-menu {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .profile-container .profile-image-container #dropdown-menu a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color:black;
+        padding-right: 10px;
+        font-size: 10px;
+        text-decoration: none;
+    }
+    .profile-container .profile-image-container #dropdown-menu a:hover{
+        background: none;
+    }
+    .profile-container .profile-image-container #dropdown-menu li{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #body-section{
+        height: 800px;   
+    }
+    .inner-section {
+        margin-top: 80px;
+        margin-left: 0; /* Initial position */
+        transition: margin-left 0.3s ease; /* Add transition effect for smooth animation */
+        /* Add other desired styles for the inner section */
+        position: relative;
+        width: 100vw;
+    }
+    .inner-section .photo-profile-container{
+        width: 100%;    
+        padding-left: 10px;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .inner-section .photo-profile-container #profile-photo-container{
+        
+        padding-top:50px !important;
+    }
+    .inner-section .photo-profile-container img{
+        width: 100px;
+        height: auto;
+    }
+    .inner-section .photo-profile-container .name-id-container{
+        padding-top: 5px;
+        text-align: center;
+        margin-left: 30px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        width: 100px;
+    }
+    .inner-section .photo-profile-container .name-id-container #name-container{
+        font-size: 18px;
+    }
+    .inner-section .photo-profile-container .name-id-container #name-id{
+        font-size: 12px;
+    }
+    .inner-section .photo-profile-container button{
+        margin-left: 10px;
+        width: 70px;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-weight: 500;
+        font-size: 10px;
+        border: white solid 1px;
+    }
+    .inner-section .photo-profile-container button:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+        transition: 0.5s ease;
+    }
+    .inner-section .menu-links{
+        padding-left: 0;
+        background-color: grey;
+        height: 35px;
+        border-bottom: rgb(10,104,155) solid 3px;
+        width: 100%;
+    }
+    .inner-section .menu-links ul{
+        margin-left: 100px;
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .inner-section .menu-links li{
+        margin-right: 5px;
+        height: 100%;
+    }
+    .inner-section .menu-links a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .inner-section .menu-links a:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+    }
+    .inner-section .menu-links .ajax-container{
+        font-size: large;
+        padding-top: 50px;
+        padding-right: 20 !important;
+        width: auto;
+        height: auto;
+        background-color: inherit;
+        padding-bottom: 7%;
+        transition: 0.5s ease-in-out;
+    }
+    .inner-section .menu-links .ajax-container #loading-spinner{
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+        display: none;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    
+}

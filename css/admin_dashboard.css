@@ -1,0 +1,148 @@
+body{
+    background: radial-gradient(circle, rgba(52,48,48,1) 0%, rgba(128,128,128,1) 93%);
+}
+/* Side panel styles */
+.side-panel{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgb(10,104,155);
+    background: linear-gradient(180deg, rgba(10,104,155,1) 83%, rgba(128,128,128,1) 98%);
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+  
+.side-panel.open{
+    left: 0;
+}
+  
+.side-panel ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+.side-panel .list-group-item {
+    color: #fff;
+    background-color: inherit;
+    border: none;
+}
+  
+  /* Close button styles */
+.close-button {
+    position: relative;
+    top: 10px;
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+  
+  .close-button:hover {
+    color: #ccc;
+  }
+  
+  /* Content styles */
+.container {
+    margin-top: 50px;
+}
+  
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+#hamburgerBtn{
+    margin-left: 25px !important;
+    margin-top: 30px !important;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.side-panel .logo-container{
+    padding-left: 5px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.side-panel .logo-container h2{
+    font-size: 30px;
+}
+.side-panel .logo-container img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.side-panel .dashboard-container{
+    padding-right: 20px;
+}
+.side-panel .account-name-container{
+    padding-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+    background-color: #07486b;
+}
+.side-panel .dashboard-container .buttons-container button{
+    background: inherit;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.side-panel .dashboard-container .buttons-container button:hover{
+    background: #0a589b;
+    background: linear-gradient(180deg, #0c6dc1 13%, #0a589b 100%);
+    color: black;
+    transition: 0.5s;
+}
+.profile-container{
+    float: right;
+    background: inherit;
+    
+}
+.profile-container .profile-image-container span{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.profile-container .profile-image-container #dropdown-menu{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #8497b2;
+    border-radius: 10px;
+}
+.profile-container .profile-image-container .dropdown .dropdown-menu {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.profile-container .profile-image-container #dropdown-menu a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color:black;
+    padding-right: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.profile-container .profile-image-container #dropdown-menu a:hover{
+    background: none;
+}
+.profile-container .profile-image-container #dropdown-menu li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

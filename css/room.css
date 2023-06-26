@@ -1,0 +1,44 @@
+.card-header h4{
+    font-size: 24px !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#myTable th{
+    font-size: 1.5vw;
+}
+#myTable td{
+    font-size: 1vw;
+}
+#add_employee{
+    font-size: 1vw;
+}
+.modal-content input{
+    height: 40px;
+    font-size: 15px;
+    border: solid #177695;
+}
+.modal-content label{
+    font-size: 1.3vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#177695;
+}
+.modal-content button{
+    height: 3vw;
+    font-size: 1.5vw;
+    width: 8vw;
+    text-align: center;
+}
+.modal-content input[type="file"] {
+    display: none;
+}
+.modal-content .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #dcdcdc;
+}

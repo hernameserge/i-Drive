@@ -1,0 +1,74 @@
+body{
+    background: rgb(52,48,48);
+    background: radial-gradient(circle, rgba(52,48,48,1) 0%, rgba(128,128,128,1) 93%);
+}
+.dashboard-container{
+    float: left;
+    
+    height: 100vh;
+    background: rgb(10, 88, 155);
+    background: linear-gradient(180deg, rgb(10, 88, 155) 30%, rgba(128,128,128,1) 100%, rgba(255,255,255,1) 100%);
+    color: white;
+    padding-right: 20px;
+}
+.dashboard-container .logo-container h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.dashboard-container .logo-container img{
+    height: 80px;
+    width: 80px;
+    top: -30px;
+}
+.dashboard-container .account-name-container{
+    padding-left: 30px;
+    height: 100px;
+    background-color: #063b67;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dashboard-container .account-name-container h2{
+    padding-top: 10px;
+}
+.dashboard-container .buttons-container button{
+    background: inherit;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.dashboard-container .buttons-container button:hover{
+    background: #0a589b;
+    background: linear-gradient(180deg, #0c6dc1 13%, #0a589b 100%);
+    color: black;
+    transition: 0.5s;
+}
+.top-tool .profile-container .profile-image-container{
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-right: 50px;
+}
+.top-tool .profile-container .profile-image-container span{
+    font-size: 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 20px;  
+}
+.top-tool .profile-container .profile-image-container #dropdown-menu{
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #a0b7d8;
+}
+.top-tool .profile-container .profile-image-container #dropdown-menu a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+.top-tool .profile-container .profile-image-container #dropdown-menu li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
