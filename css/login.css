@@ -61,6 +61,10 @@ body {
     font-size: 16px;
 }
 
+.navbar > * {
+    z-index: 1000;
+}
+
 .navbar-list-container > button, 
 .navbar-list-container > ul, 
 .navbar-list-container > ul > li {
@@ -171,6 +175,162 @@ body {
 #check {
     display: none;
 }
+
+.modal-header {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #aa1419; 
+
+    padding: 2%;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal-header i {
+    float: right;   
+    margin-top: -30px;
+
+    font-size: 50px;
+}
+
+.modal-form {
+
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1000;  
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-content {
+
+    border-top: 25px solid; 
+    border-color: rgb(170, 20, 25, 0.95 );
+
+    display: flex;  
+    flex-direction: column; 
+
+    background-color: #ffff;
+
+    width: 600px;
+    height: 700px;
+    padding: 2%;
+
+    border-radius: 4px;
+}
+
+.modal-form form {
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.form-row { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    padding-left: 1%;
+
+}
+
+.form-row label {
+    font-size: 14px;  
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: #515151;
+}
+
+.modal-form hr {
+    border: none;
+    background-color: #d3d3d3;
+    height: 2px;
+
+    margin-bottom: 5%;
+
+    width: 100%;
+}
+
+.submit-btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    background-color: #aa1419;
+    color: white;
+
+    padding-top: 20px;
+    
+    border: none;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 9%;
+    padding-right: 9%;
+
+    width: 200px;
+
+    border-radius: 35px 35px;
+}
+
+.submit-btn:disabled {
+    background-color: darkgray;
+    color: rgb(252, 252, 252);
+    opacity: 1;
+}
+
+.terms-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10%;
+}
+
+.terms-agreement a {
+    color: #aa1419;
+}
+
+.terms-agreement h1 {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.form-row input {
+    width: 70%;
+    height: 40px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #aa1419;
+}
+
+input[type=checkbox] {
+    width: 40px;
+    height: 20px;
+}
+
+.form-row input[type=date] {
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #666;
+}
+
 
 /* end of the navigation bar --------------------------------------------------------- */ 
 
