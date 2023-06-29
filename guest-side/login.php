@@ -13,17 +13,18 @@
     <!-- Boxicons CDN -->
     <link href = 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header> <!--sibling 1 -->
         <div class = "navigation-bar-container"> 
             <nav class = "navbar"> <!-- parent of 1 & 2  -->
-                
                 <input type = "checkbox" id = "check" class = "chkbox"> 
                 <label for ="check" class = "hamburger-btn"> 
                     <i class='bx bx-menu'> </i> 
-                </label> 
-
+                </label>
                 <div class = "logo-container"> <!-- 1 -->
                     <img src = "../img/i-drive-logo.png" class = "logo"> <strong class = "idrive-name"> i-Drive </strong> 
                 </div> 
@@ -72,10 +73,99 @@
             </form>
 
             <div class="signup"> 
-                Don't have an iDrive account? <a href = ""> Register </a>
+                Don't have an iDrive account? <a href = "" id = "register-link"> Register </a>
             </div>
         </div>
     </div>
+
+    <div class="modal-form" id = "modal">
+            <div class="modal-content"> 
+                <div class="modal-header"> Registration Form 
+                    <span> <i id = "close" class='bx bx-x'> </i> </span>  
+                </div> 
+            <hr>
+            <form action = "../front_end/register_student.php" method="POST">
+            
+                <div class="form-row"> 
+                    <label for = "first_name"> First Name </label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="middle_name">Middle Name</label>
+                    <input type="text" name="middle_name" id="middle_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" required>
+                </div>
+                <div class="form-row">
+                    <label for="email_address">Email Address</label>
+                    <input type="email" name="register_email" id="email_address" required>
+                </div>   
+                <div class="form-row">      
+                    <label for="password">Password</label>
+                    <input type="password" name="register_password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="date_of_birth">Date of Birth</label>
+                    <input type="date" name="date_of_birth" id="date_of_birth" required>
+                </div>
+                <div class="form-row">
+                    <label for="mobile_number">Mobile Number</label>
+                    <input type="number" name="mobile_number" id="mobile_number" required>
+                </div>
+                <div class="terms-agreement">
+                    <input type="checkbox" id = "terms_and_conditions" value = "1"> <h1> I have read and agreed to the <a href = "index.php" target="_blank" rel="noopener noreferrer"> Terms and Agreements</a>. </h1>
+                </div>
+                
+                <center> 
+
+                <button id = "submit_button" class = "submit-btn" type="submit" name="register" disabled> Sign In </button>
+
+                </center>
+
+                <script>
+                
+                $(document).ready(function(){
+
+                    $('#terms_and_conditions').click(function(){
+                        if($(this).is(':checked')){
+                            $('#submit_button').attr("disabled", false);
+                        } 
+                        else{
+                            $('#submit_button').attr("disabled", true);
+                        }
+                    });
+
+                });
+
+                </script>
+                 
+            </form>
+        </div>
+    </div>
+
+    <script>
+                
+        $(document).ready(function(){
+
+            $('.modal-form').hide();
+
+            $('#register-link').click(function(){ 
+                $('.modal-form').show();
+            });
+
+            $('#close').click(function() {
+                $('.modal-form').hide();
+            });
+
+        });
+
+    </script>
 
     <footer> 
         <div class="footer-container">
